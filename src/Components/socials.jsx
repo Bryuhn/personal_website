@@ -68,7 +68,6 @@ const Social = () => {
           </li>
         ))}
       </ul>
-      <div className=" text-bg-green-20 text-xxl max-h-full text-ellipsis bg-first  text-second"></div>
     </div>
   )
 }
