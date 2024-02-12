@@ -20,7 +20,6 @@ const NavBar = () => {
 			link: "Experience",
 			path: "/Experience",
 		},
-		,
 		{
 			id: 4,
 			link: "Portfolio",
