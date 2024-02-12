@@ -10,7 +10,7 @@ import React from "react";
 
 function Welcome() {
 	return (
-		<div className="">
+		<div className="bg-fourth h-screen w-screen">
 			<NavBar />
 			<Social />
 			<Routes>
