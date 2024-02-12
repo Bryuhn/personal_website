@@ -1,7 +1,18 @@
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./Components/nav";
+import Landing from "./Components/landing";
 import React from "react";
 
-const App = () => {
-	return <div className="bg-black text-white text-center">Brian Keane</div>;
-};
+function Welcome() {
+	return (
+		<div className="">
+			<NavBar />
+			<Routes>
+				<Route path="" element={<Landing />} />
+				<Route path="/Home" element={<Landing />} />
+			</Routes>
+		</div>
+	);
+}
 
-export default App;
+export default Welcome;
