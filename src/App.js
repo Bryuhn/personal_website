@@ -5,12 +5,14 @@ import Contact from "./Components/contact";
 import Personal from "./Components/personal";
 import Experience from "./Components/experience";
 import Profile from "./Components/profile";
+import Social from "./Components/socials";
 import React from "react";
 
 function Welcome() {
 	return (
 		<div className="">
 			<NavBar />
+			<Social />
 			<Routes>
 				<Route path="" element={<Landing />} />
 				<Route path="/Home" element={<Landing />} />
