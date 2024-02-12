@@ -10,6 +10,9 @@ module.exports = {
         fourth: '#1F4646',
         fifth: '#0F2828',
       },
+      spacing: {
+        116: '29rem',
+      },
     },
   },
   plugins: [],
