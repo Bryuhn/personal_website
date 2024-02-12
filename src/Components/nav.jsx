@@ -25,13 +25,11 @@ const NavBar = () => {
 			link: "Portfolio",
 			path: "/Portfolio",
 		},
-		,
 		{
 			id: 5,
 			link: "Personal",
 			path: "/Personal",
 		},
-		,
 		{
 			id: 6,
 			link: "Contact",
