@@ -7,27 +7,43 @@ const NavBar = () => {
 	const tab = [
 		{
 			id: 1,
-			link: "Welcome!",
+			link: "Home",
 			path: "/Home",
 		},
 		{
-			id: 6,
-			link: "test2",
-			path: "/test2",
+			id: 2,
+			link: "Profile",
+			path: "/Profile",
 		},
 		{
-			id: 7,
-			link: "test1",
-			path: "/test1",
+			id: 3,
+			link: "Experience",
+			path: "/Experience",
+		},
+		,
+		{
+			id: 4,
+			link: "Portfolio",
+			path: "/Portfolio",
+		},
+		,
+		{
+			id: 5,
+			link: "Personal",
+			path: "/Personal",
+		},
+		,
+		{
+			id: 6,
+			link: "Contact",
+			path: "/Contact",
 		},
 	];
 
 	return (
 		<div className="relative z-20 flex h-20 w-full items-center justify-between uppercase shadow-md">
 			<div className="ml-32 flex text-6xl">
-				<p className="mt-1">S</p>
-				<p className="mb-1">&</p>
-				<p className="mt-1">B</p>
+				<p className="mt-1">Brian Brousse</p>
 			</div>
 
 			<ul className="text-md absolute right-24 flex items-center justify-center font-Montserrat font-light max-xl:hidden">
