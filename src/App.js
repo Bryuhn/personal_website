@@ -11,7 +11,7 @@ import React from 'react';
 
 function Welcome() {
   return (
-    <div className="h-screen w-screen bg-fifth">
+    <div>
       <NavBar />
       <Social />
       <Routes>

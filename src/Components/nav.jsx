@@ -38,23 +38,23 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="relative z-20 flex h-20 w-screen items-center justify-between shadow-md">
+    <div className="relative z-40 flex h-20 w-screen items-center justify-between font-bold shadow-md ">
       <div className="flex text-6xl ">
-        <p className="ml-24">Brian Brousse</p>
+        <p className="ml-36 max-lg:ml-16 max-lg:text-4xl">Brian Brousse</p>
       </div>
-      <ul className="text-md absolute right-24 flex items-center justify-center font-light max-xl:hidden">
+      <ul className="text-md absolute right-6 flex items-center justify-center font-bold  max-xl:hidden">
         {tab.map(({ id, link, path, metas }) => (
-          <li key={id} className="px-5 text-xl hover:text-first hover:underline">
+          <li key={id} className="px-5 text-xl hover:text-white hover:underline">
             <a href={path}>{link}</a>
             <meta name={metas} content=""></meta>
           </li>
         ))}
       </ul>
-      <div onClick={() => setNav(!nav)} className="z-40 mr-5 cursor-pointer xl:hidden">
+      <div onClick={() => setNav(!nav)} className="z-40 mr-5 cursor-pointer hover:text-white xl:hidden">
         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
       {nav && (
-        <ul className="fixed right-0 top-0 flex w-40 flex-col justify-center rounded-l bg-green-200 bg-opacity-50 text-left xl:hidden">
+        <ul className="fixed right-0 top-0 flex w-40 flex-col justify-center rounded-l bg-fourth text-left opacity-90 xl:hidden">
           {tab.map(({ id, link, path }) => (
             <li
               key={link.id}
