@@ -38,28 +38,27 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="bg-black relative z-20 flex h-20 w-screen items-center justify-between bg-opacity-30 shadow-md">
-      <div className="flex text-6xl">
-        <p className="mt-1">Brian Brousse!</p>
+    <div className="relative z-20 flex h-20 w-screen items-center justify-between shadow-md">
+      <div className="flex text-6xl ">
+        <p className="ml-24">Brian Brousse</p>
       </div>
-
-      <ul className="text-md font-Montserrat absolute right-24 flex items-center justify-center font-light max-xl:hidden">
+      <ul className="text-md absolute right-24 flex items-center justify-center font-light max-xl:hidden">
         {tab.map(({ id, link, path, metas }) => (
-          <li key={id} className="px-5 hover:text-third hover:underline">
+          <li key={id} className="px-5 text-xl hover:text-first hover:underline">
             <a href={path}>{link}</a>
             <meta name={metas} content=""></meta>
           </li>
         ))}
       </ul>
-      <div onClick={() => setNav(!nav)} className="z-40 cursor-pointer pr-5 xl:hidden">
+      <div onClick={() => setNav(!nav)} className="z-40 mr-5 cursor-pointer xl:hidden">
         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
       {nav && (
-        <ul className="bg-green-200 fixed right-0 top-0 flex flex-col items-center justify-center rounded bg-opacity-50 xl:hidden">
+        <ul className="fixed right-0 top-0 flex w-40 flex-col justify-center rounded-l bg-green-200 bg-opacity-50 text-left xl:hidden">
           {tab.map(({ id, link, path }) => (
             <li
               key={link.id}
-              className="hover:text-white cursor-pointer py-6 ps-4 text-2xl font-bold capitalize duration-500 hover:scale-110"
+              className="cursor-pointer py-6 ps-4 text-2xl font-bold capitalize duration-500 hover:scale-110 hover:text-white"
             >
               <li onClick={() => setNav(!nav)}>
                 <a href={path}>{link}</a>

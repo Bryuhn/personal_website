@@ -6,11 +6,12 @@ import Personal from './Components/personal';
 import Experience from './Components/experience';
 import Profile from './Components/profile';
 import Social from './Components/socials';
+import Base from './Components/base';
 import React from 'react';
 
 function Welcome() {
   return (
-    <div className="h-screen w-screen bg-fourth">
+    <div className="h-screen w-screen bg-fifth">
       <NavBar />
       <Social />
       <Routes>
@@ -22,6 +23,7 @@ function Welcome() {
         <Route path="/Experience" element={<Experience />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Base />
     </div>
   );
 }
