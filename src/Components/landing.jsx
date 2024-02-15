@@ -1,23 +1,21 @@
 import React from 'react';
 import Profile from '../assets/profile_picture.png';
+import { BiSolidRightArrow } from 'react-icons/bi';
 import { useTypewriter } from 'react-simple-typewriter';
 
 const Landing = () => {
   const [typeEffect] = useTypewriter({
-    words: [' a Geosptial Analyst', ' a Offshore Surveyor', ' a Data Processor', ' open to work!'],
+    words: [' a Geosptial Analyst.', ' a Offshore Surveyor.', ' a Data Processor.', ' Open to work!'],
     loop: 1,
     typeSpeed: 75,
     deleteSpeed: 40,
   });
 
   return (
-    <div
-      name="Home"
-      className="gap-4% mt- absolute z-30 mx-36 grid h-[80%] grid-cols-2  outline-dotted max-lg:mx-10 max-md:mx-16 max-md:grid-cols-1"
-    >
-      <div className="grid-flow-row-2 grid h-fit rounded-md text-center outline-dotted outline-yellow-500 max-md:mt-0 max-md:h-40">
+    <div name="Home" className="gap-4% absolute z-30 mx-36 mt-10 grid h-[80%] grid-cols-2">
+      <div className="grid-flow-row-2 mt-10 grid h-fit rounded-md text-center outline-yellow-500">
         <div className="flex h-28 items-end text-left text-6xl font-extrabold">I am:</div>
-        <div className="flex h-28 bg-gradient-to-r from-third to-white bg-clip-text text-left text-6xl font-extrabold text-transparent outline-double outline-red-400 max-md:h-44">
+        <div className="flex h-28 bg-gradient-to-r from-third to-white bg-clip-text text-left text-6xl font-extrabold text-transparent max-md:h-44">
           {typeEffect}
         </div>
         <p className="flex rounded-xl text-left font-bold text-white">
@@ -33,9 +31,24 @@ const Landing = () => {
           opportunities, I am ready to collaborate and apply my diverse skill set to make a positive impact on our
           environment. Let's explore the possibilities together!
         </p>
+        <div className="out mt-10 flex w-full justify-center">
+          <button
+            to="Portfolio"
+            smooth
+            duration={500}
+            className="group my-2 flex w-fit items-center rounded bg-gradient-to-r from-third to-first px-6 py-3 text-white
+            duration-300 hover:scale-110"
+          >
+            {' '}
+            Portfolio
+            <span className=" duration-300 group-hover:rotate-90">
+              <BiSolidRightArrow className="ml-1 " />
+            </span>
+          </button>
+        </div>
       </div>
       <div className="row-span-2 h-[70%] rounded-md max-md:hidden">
-        <img className="w-50 h-[100%] content-start outline-dotted max-md:hidden" src={Profile} alt="Hero" />
+        <img className="w-50 h-[100%] max-md:hidden" src={Profile} alt="Hero" />
       </div>
     </div>
   );

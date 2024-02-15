@@ -40,7 +40,7 @@ const NavBar = () => {
   return (
     <div className="relative z-40 flex h-20 w-screen items-center justify-between font-bold shadow-md ">
       <div className="flex text-6xl ">
-        <p className="ml-36 max-lg:ml-16 max-lg:text-4xl">Brian Brousse</p>
+        <p className="ml-36">Brian Brousse</p>
       </div>
       <ul className="text-md absolute right-6 flex items-center justify-center font-bold  max-xl:hidden">
         {tab.map(({ id, link, path, metas }) => (
