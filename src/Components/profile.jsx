@@ -15,30 +15,30 @@ const profile = () => {
           outline outline-1 duration-150 ease-in-out hover:scale-[102%]"
         >
           <div className="col-span-2 flex justify-center py-2 text-xl font-bold text-white">
-            <a>Position:</a>
+            <p>Position:</p>
           </div>
           <div name="card header" className=" grid h-12 grid-cols-2">
             <div>
-              <a>Title:</a>
-              <a className="text-white"> Surveyor</a>
+              <p>Title:</p>
+              <p className="text-white"> Surveyor</p>
             </div>
             <div>
-              <a>Company:</a>
-              <a className="text-white"> Freelance</a>
+              <p>Company:</p>
+              <p className="text-white"> Freelance</p>
             </div>
             <div>
-              <a>Location:</a>
-              <a className="text-white"> Europe</a>
+              <p>Location:</p>
+              <p className="text-white"> Europe</p>
             </div>
             <div className="">
-              <a>Period:</a>
-              <a className="text-white"> August 2022-Current</a>
+              <p>Period:</p>
+              <p className="text-white"> August 2022-Current</p>
             </div>
             <hr className="col-span-2 p-2"></hr>
           </div>
           <div className="">
             <div className="flex h-full w-full justify-center p-2 font-bold text-white">
-              <a>Overview</a>
+              <p>Overview</p>
             </div>
             <br></br>
             <div className="text-white">
@@ -77,29 +77,29 @@ const profile = () => {
         >
           <div name="card header" className="grid grid-cols-2 outline-purple-600">
             <div className="col-span-2 flex justify-center py-2 text-xl font-bold text-white">
-              <a>Sample Project:</a>
+              <p>Sample Project:</p>
             </div>
             <div>
-              <a>Company:</a>
-              <a className="text-white"> MRE.ltd</a>
+              <p>Company:</p>
+              <p className="text-white"> MRE.ltd</p>
             </div>
             <div>
-              <a>Site:</a>
-              <a className="text-white"> SSE Windfarm GB</a>
+              <p>Site:</p>
+              <p className="text-white"> SSE Windfarm GB</p>
             </div>
             <div className="">
-              <a>Period:</a>
-              <a className="text-white"> March 2023</a>
+              <p>Period:</p>
+              <p className="text-white"> March 2023</p>
             </div>
             <div className="">
-              <a>Project:</a>
-              <a className="text-white"> Boulder Removal</a>
+              <p>Project:</p>
+              <p className="text-white"> Boulder Removal</p>
             </div>
             <hr className="col-span-2"></hr>
           </div>
           <div className="">
             <div className="flex justify-center p-2 font-bold text-white">
-              <a>Project Outline</a>
+              <p>Project Outline</p>
             </div>
             <div className="text-white">
               <br></br>
@@ -112,7 +112,7 @@ const profile = () => {
           </div>
           <div className="">
             <div className="flex justify-center p-2 font-bold text-white">
-              <a>Processes</a>
+              <p>Processes</p>
             </div>
             <div className="text-white">
               <br></br>
@@ -131,7 +131,7 @@ const profile = () => {
           </div>
           <div className="">
             <div className="flex justify-center p-2 font-bold text-white">
-              <a>Software</a>
+              <p>Software</p>
             </div>
             <div className="text-white">
               <p className="px-2text-white">
@@ -143,7 +143,7 @@ const profile = () => {
           </div>
           <div className="">
             <div className="flex justify-center p-2 font-bold text-white">
-              <a>Outcome</a>
+              <p>Outcome</p>
             </div>
             <div className="text-white">
               <br></br>
@@ -160,18 +160,22 @@ const profile = () => {
            outline-1 duration-150 ease-in-out hover:scale-[102%]"
         >
           <div className="text-font-bold col-span-2 flex justify-center py-2 text-lg font-bold">
-            <a>Vessel:</a>
-            <a className="text-white"> Aurara Rose</a>
+            <p>Vessel:</p>
+            <p className="text-white"> Aurara Rose</p>
           </div>
           <div>
-            <img className="scale-80 rounded-md outline" src={ship}></img>
+            <img className="scale-80 rounded-md outline" alt="ship" src={ship}></img>
           </div>
           <div className="text-font-bold col-span-2 flex justify-center py-2 text-lg font-bold">
-            <a>Site Location:</a>
-            <a className=" text-white"> SSE Windfarm, Scotland, Great Britian</a>
+            <p>Site Location:</p>
+            <p className=" text-white"> SSE Windfarm, Scotland, Great Britian</p>
           </div>
           <div>
-            <img className="scale-80 rounded-md shadow-md shadow-black outline outline-third" src={chart}></img>
+            <img
+              className="scale-80 rounded-md shadow-md shadow-black outline outline-third"
+              alt="chart"
+              src={chart}
+            ></img>
           </div>
         </div>
       </div>
